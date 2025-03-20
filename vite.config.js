@@ -17,4 +17,8 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  base: './', // 确保 Electron 能正确加载文件
+  build: {
+    outDir: 'dist',
+  },
 })
